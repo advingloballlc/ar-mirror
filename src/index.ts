@@ -8,7 +8,7 @@ import "./index.css";
 const engine = new PoseEngine();
 const token =
   location.hostname === "localhost"
-    ? "localhost_sdk_token"
+    ? "bUas84ehFX0K6XtuKexIv0mdkrLoNgT_"
     : "3Y9wHffi4TPD_VxQCy2_AKXj8NVEA_rP";
 
 // Parameters
