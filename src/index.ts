@@ -9,7 +9,7 @@ const engine = new PoseEngine();
 const token =
   location.hostname === "localhost"
     ? "bUas84ehFX0K6XtuKexIv0mdkrLoNgT_"
-    : "3Y9wHffi4TPD_VxQCy2_AKXj8NVEA_rP";
+    : "eGggE_09roEgY2ZEq3PMGSWUfs1aM4MG";
 
 // Parameters
 const urlParams = new URLSearchParams(window.location.search);

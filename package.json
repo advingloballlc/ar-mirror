@@ -4,6 +4,7 @@
   "private": true,
   "title": "Pose Tracking Demo",
   "description": "Geenee pose tracking demo",
+  "homepage": "http://advingloballlc.github.io/ar-mirror",
   "dependencies": {
     "@babylonjs/core": "^5.38.1",
     "@babylonjs/loaders": "^5.38.1",
@@ -15,6 +16,7 @@
     "copyfiles": "^2.4.1",
     "css-loader": "^6.7.1",
     "esbuild-loader": "^2.20.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "serve": "^14.1.2",
@@ -29,7 +31,9 @@
     "build": "webpack build --mode=production",
     "serve": "serve -p 3000 -s build",
     "postinstall": "npm run post:wasm",
-    "post:wasm": "copyfiles -f \"node_modules/@geenee/bodytracking/dist/*.wasm\" public/"
+    "post:wasm": "copyfiles -f \"node_modules/@geenee/bodytracking/dist/*.wasm\" public/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
